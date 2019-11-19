@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		684BE38C2384743400BF1702 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE38B2384743400BF1702 /* CardViewModel.swift */; };
+		684BE38E2384748D00BF1702 /* SwipePhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE38D2384748D00BF1702 /* SwipePhotosController.swift */; };
+		684BE392238474BC00BF1702 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE390238474BC00BF1702 /* Extensions+UIView.swift */; };
+		684BE393238474BC00BF1702 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE391238474BC00BF1702 /* Firebase+Utils.swift */; };
+		684BE3952384750A00BF1702 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE3942384750900BF1702 /* PhotoController.swift */; };
+		684BE3982384753D00BF1702 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE3972384753D00BF1702 /* HomeController.swift */; };
+		684BE39A2384757300BF1702 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE3992384757300BF1702 /* SettingsController.swift */; };
+		684BE39C238475AD00BF1702 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE39B238475AD00BF1702 /* User.swift */; };
+		684BE39F2384763700BF1702 /* UserDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE39E2384763700BF1702 /* UserDetailsController.swift */; };
+		684BE3A12384774500BF1702 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE3A02384774500BF1702 /* SettingsCell.swift */; };
+		684BE3A3238478E300BF1702 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 684BE3A2238478E300BF1702 /* GoogleService-Info.plist */; };
+		684BE3A523847CEE00BF1702 /* GoogleService-Info2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 684BE3A423847CEE00BF1702 /* GoogleService-Info2.plist */; };
+		684BE3AC238482ED00BF1702 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE3AA238482ED00BF1702 /* HomeViewController.swift */; };
+		684BE3AD238482ED00BF1702 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684BE3AB238482ED00BF1702 /* HomeViewController.xib */; };
 		68961DB923845F9E0015AF0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DB823845F9E0015AF0A /* AppDelegate.swift */; };
 		68961DBB23845F9E0015AF0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DBA23845F9E0015AF0A /* SceneDelegate.swift */; };
 		68961DBD23845F9E0015AF0A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DBC23845F9E0015AF0A /* FirstViewController.swift */; };
@@ -16,6 +30,12 @@
 		68961DC723845FA10015AF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68961DC623845FA10015AF0A /* Assets.xcassets */; };
 		68961DCA23845FA10015AF0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68961DC823845FA10015AF0A /* LaunchScreen.storyboard */; };
 		68961DD523845FA10015AF0A /* FoodTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DD423845FA10015AF0A /* FoodTinderTests.swift */; };
+		68961DE823846C530015AF0A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DE723846C530015AF0A /* CardView.swift */; };
+		68961DEA23846C600015AF0A /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DE923846C600015AF0A /* AgeRangeCell.swift */; };
+		68961DEC23846C780015AF0A /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DEB23846C780015AF0A /* TopNavigationStackView.swift */; };
+		68961DEE23846C840015AF0A /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DED23846C840015AF0A /* HomeBottomControlsStackView.swift */; };
+		D406C124FAFA65C908D52E8D /* Pods_FoodTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85094F913AFD8573A62D322 /* Pods_FoodTinder.framework */; };
+		FD1EC14DEA7E0D4E3DB7B8AA /* Pods_FoodTinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6149AB0E6145241F1A5FC2 /* Pods_FoodTinderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +49,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E6149AB0E6145241F1A5FC2 /* Pods_FoodTinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CB958A187B04EFED8214FC /* Pods-FoodTinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinderTests.release.xcconfig"; path = "Target Support Files/Pods-FoodTinderTests/Pods-FoodTinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AE48235A7FDE514507BBCAA /* Pods-FoodTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinder.release.xcconfig"; path = "Target Support Files/Pods-FoodTinder/Pods-FoodTinder.release.xcconfig"; sourceTree = "<group>"; };
+		684BE38B2384743400BF1702 /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardViewModel.swift; path = "../../../Tinder-Clone/Tinder/ViewModels/CardViewModel.swift"; sourceTree = "<group>"; };
+		684BE38D2384748D00BF1702 /* SwipePhotosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipePhotosController.swift; sourceTree = "<group>"; };
+		684BE390238474BC00BF1702 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		684BE391238474BC00BF1702 /* Firebase+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		684BE3942384750900BF1702 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
+		684BE3972384753D00BF1702 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		684BE3992384757300BF1702 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		684BE39B238475AD00BF1702 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		684BE39E2384763700BF1702 /* UserDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsController.swift; sourceTree = "<group>"; };
+		684BE3A02384774500BF1702 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		684BE3A2238478E300BF1702 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		684BE3A423847CEE00BF1702 /* GoogleService-Info2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info2.plist"; sourceTree = "<group>"; };
+		684BE3AA238482ED00BF1702 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		684BE3AB238482ED00BF1702 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		68961DB523845F9E0015AF0A /* FoodTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68961DB823845F9E0015AF0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68961DBA23845F9E0015AF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +79,13 @@
 		68961DD023845FA10015AF0A /* FoodTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68961DD423845FA10015AF0A /* FoodTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTinderTests.swift; sourceTree = "<group>"; };
 		68961DD623845FA10015AF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68961DE723846C530015AF0A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Components/CardView.swift; sourceTree = "<group>"; };
+		68961DE923846C600015AF0A /* AgeRangeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
+		68961DEB23846C780015AF0A /* TopNavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		68961DED23846C840015AF0A /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
+		D85094F913AFD8573A62D322 /* Pods_FoodTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE445B412A390DD646402D47 /* Pods-FoodTinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinderTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodTinderTests/Pods-FoodTinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3917571C4C5120E7A02F3B6 /* Pods-FoodTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinder.debug.xcconfig"; path = "Target Support Files/Pods-FoodTinder/Pods-FoodTinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D406C124FAFA65C908D52E8D /* Pods_FoodTinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +101,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1EC14DEA7E0D4E3DB7B8AA /* Pods_FoodTinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		684BE38F238474B300BF1702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				684BE390238474BC00BF1702 /* Extensions+UIView.swift */,
+				684BE391238474BC00BF1702 /* Firebase+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		684BE3962384750F00BF1702 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				684BE3972384753D00BF1702 /* HomeController.swift */,
+				684BE3942384750900BF1702 /* PhotoController.swift */,
+				684BE38D2384748D00BF1702 /* SwipePhotosController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		684BE3AE2384844B00BF1702 /* MVC  Test */ = {
+			isa = PBXGroup;
+			children = (
+				684BE3AA238482ED00BF1702 /* HomeViewController.swift */,
+				684BE3AB238482ED00BF1702 /* HomeViewController.xib */,
+			);
+			path = "MVC  Test";
+			sourceTree = "<group>";
+		};
 		68961DAC23845F9E0015AF0A = {
 			isa = PBXGroup;
 			children = (
 				68961DB723845F9E0015AF0A /* FoodTinder */,
 				68961DD323845FA10015AF0A /* FoodTinderTests */,
 				68961DB623845F9E0015AF0A /* Products */,
+				BEDD1210E32F349071FC2460 /* Pods */,
+				A8340553C401BA9C755681FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +159,13 @@
 		68961DB723845F9E0015AF0A /* FoodTinder */ = {
 			isa = PBXGroup;
 			children = (
+				684BE38F238474B300BF1702 /* Extensions */,
+				68961DE523846ACD0015AF0A /* Infos */,
+				68961DE423846AC90015AF0A /* Login */,
+				68961DE323846ABD0015AF0A /* Onboarding */,
+				68961DE223846AB70015AF0A /* Favs */,
+				68961DE123846AB10015AF0A /* Settings */,
+				68961DE023846AAB0015AF0A /* Home */,
 				68961DB823845F9E0015AF0A /* AppDelegate.swift */,
 				68961DBA23845F9E0015AF0A /* SceneDelegate.swift */,
 				68961DBC23845F9E0015AF0A /* FirstViewController.swift */,
@@ -90,6 +173,8 @@
 				68961DC023845F9E0015AF0A /* Main.storyboard */,
 				68961DC623845FA10015AF0A /* Assets.xcassets */,
 				68961DC823845FA10015AF0A /* LaunchScreen.storyboard */,
+				684BE3A2238478E300BF1702 /* GoogleService-Info.plist */,
+				684BE3A423847CEE00BF1702 /* GoogleService-Info2.plist */,
 				68961DCB23845FA10015AF0A /* Info.plist */,
 				68961DC323845F9E0015AF0A /* FoodTinder.xcdatamodeld */,
 			);
@@ -105,6 +190,87 @@
 			path = FoodTinderTests;
 			sourceTree = "<group>";
 		};
+		68961DE023846AAB0015AF0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				684BE3AE2384844B00BF1702 /* MVC  Test */,
+				68961DE623846B790015AF0A /* Components */,
+				684BE3962384750F00BF1702 /* Controllers */,
+				684BE38B2384743400BF1702 /* CardViewModel.swift */,
+				68961DE723846C530015AF0A /* CardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		68961DE123846AB10015AF0A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				684BE3992384757300BF1702 /* SettingsController.swift */,
+				68961DE923846C600015AF0A /* AgeRangeCell.swift */,
+				684BE3A02384774500BF1702 /* SettingsCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		68961DE223846AB70015AF0A /* Favs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favs;
+			sourceTree = "<group>";
+		};
+		68961DE323846ABD0015AF0A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		68961DE423846AC90015AF0A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		68961DE523846ACD0015AF0A /* Infos */ = {
+			isa = PBXGroup;
+			children = (
+				684BE39B238475AD00BF1702 /* User.swift */,
+				684BE39E2384763700BF1702 /* UserDetailsController.swift */,
+			);
+			path = Infos;
+			sourceTree = "<group>";
+		};
+		68961DE623846B790015AF0A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				68961DEB23846C780015AF0A /* TopNavigationStackView.swift */,
+				68961DED23846C840015AF0A /* HomeBottomControlsStackView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A8340553C401BA9C755681FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85094F913AFD8573A62D322 /* Pods_FoodTinder.framework */,
+				2E6149AB0E6145241F1A5FC2 /* Pods_FoodTinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEDD1210E32F349071FC2460 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3917571C4C5120E7A02F3B6 /* Pods-FoodTinder.debug.xcconfig */,
+				5AE48235A7FDE514507BBCAA /* Pods-FoodTinder.release.xcconfig */,
+				DE445B412A390DD646402D47 /* Pods-FoodTinderTests.debug.xcconfig */,
+				46CB958A187B04EFED8214FC /* Pods-FoodTinderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68961DD923845FA10015AF0A /* Build configuration list for PBXNativeTarget "FoodTinder" */;
 			buildPhases = (
+				E5783B45E2B6EA5298693068 /* [CP] Check Pods Manifest.lock */,
 				68961DB123845F9E0015AF0A /* Sources */,
 				68961DB223845F9E0015AF0A /* Frameworks */,
 				68961DB323845F9E0015AF0A /* Resources */,
+				763D65BA444D9235E57A317E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68961DDC23845FA10015AF0A /* Build configuration list for PBXNativeTarget "FoodTinderTests" */;
 			buildPhases = (
+				5D525FCD0E5794763B4441E4 /* [CP] Check Pods Manifest.lock */,
 				68961DCC23845FA10015AF0A /* Sources */,
 				68961DCD23845FA10015AF0A /* Frameworks */,
 				68961DCE23845FA10015AF0A /* Resources */,
@@ -187,8 +356,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				68961DCA23845FA10015AF0A /* LaunchScreen.storyboard in Resources */,
+				684BE3A3238478E300BF1702 /* GoogleService-Info.plist in Resources */,
+				684BE3A523847CEE00BF1702 /* GoogleService-Info2.plist in Resources */,
 				68961DC723845FA10015AF0A /* Assets.xcassets in Resources */,
 				68961DC223845F9E0015AF0A /* Main.storyboard in Resources */,
+				684BE3AD238482ED00BF1702 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,16 +373,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D525FCD0E5794763B4441E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		763D65BA444D9235E57A317E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTinder/Pods-FoodTinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTinder/Pods-FoodTinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodTinder/Pods-FoodTinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5783B45E2B6EA5298693068 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68961DB123845F9E0015AF0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				68961DBF23845F9E0015AF0A /* SecondViewController.swift in Sources */,
+				68961DEA23846C600015AF0A /* AgeRangeCell.swift in Sources */,
+				684BE392238474BC00BF1702 /* Extensions+UIView.swift in Sources */,
 				68961DBD23845F9E0015AF0A /* FirstViewController.swift in Sources */,
+				684BE393238474BC00BF1702 /* Firebase+Utils.swift in Sources */,
+				68961DEC23846C780015AF0A /* TopNavigationStackView.swift in Sources */,
+				684BE38C2384743400BF1702 /* CardViewModel.swift in Sources */,
+				684BE39C238475AD00BF1702 /* User.swift in Sources */,
 				68961DB923845F9E0015AF0A /* AppDelegate.swift in Sources */,
+				684BE39A2384757300BF1702 /* SettingsController.swift in Sources */,
 				68961DBB23845F9E0015AF0A /* SceneDelegate.swift in Sources */,
+				68961DE823846C530015AF0A /* CardView.swift in Sources */,
+				684BE3952384750A00BF1702 /* PhotoController.swift in Sources */,
+				684BE39F2384763700BF1702 /* UserDetailsController.swift in Sources */,
+				684BE38E2384748D00BF1702 /* SwipePhotosController.swift in Sources */,
+				684BE3AC238482ED00BF1702 /* HomeViewController.swift in Sources */,
+				68961DEE23846C840015AF0A /* HomeBottomControlsStackView.swift in Sources */,
+				684BE3A12384774500BF1702 /* SettingsCell.swift in Sources */,
 				68961DC523845F9E0015AF0A /* FoodTinder.xcdatamodeld in Sources */,
+				684BE3982384753D00BF1702 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +619,7 @@
 		};
 		68961DDA23845FA10015AF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3917571C4C5120E7A02F3B6 /* Pods-FoodTinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +638,7 @@
 		};
 		68961DDB23845FA10015AF0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE48235A7FDE514507BBCAA /* Pods-FoodTinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,6 +657,7 @@
 		};
 		68961DDD23845FA10015AF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE445B412A390DD646402D47 /* Pods-FoodTinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +680,7 @@
 		};
 		68961DDE23845FA10015AF0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CB958A187B04EFED8214FC /* Pods-FoodTinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

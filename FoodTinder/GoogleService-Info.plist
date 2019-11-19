@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>66069156872-pc5tqfcil5gog6942mofakmjl9cdqn8m.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.66069156872-pc5tqfcil5gog6942mofakmjl9cdqn8m</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBmNd0JAr4H-50eC8zMDT3NifgP8PUJvYI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>66069156872</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zurpei.FoodTinder</string>
+	<key>PROJECT_ID</key>
+	<string>zurpei-food-tinder-1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>zurpei-food-tinder-1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:66069156872:ios:3868d9fedb4b74541a6dbd</string>
+	<key>DATABASE_URL</key>
+	<string>https://zurpei-food-tinder-1.firebaseio.com</string>
+</dict>
+</plist>
