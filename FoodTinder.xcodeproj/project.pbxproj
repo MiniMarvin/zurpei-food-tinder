@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		68961DC723845FA10015AF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68961DC623845FA10015AF0A /* Assets.xcassets */; };
 		68961DCA23845FA10015AF0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68961DC823845FA10015AF0A /* LaunchScreen.storyboard */; };
 		68961DD523845FA10015AF0A /* FoodTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DD423845FA10015AF0A /* FoodTinderTests.swift */; };
+		A7D7A6DB23847C360097CF92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */; };
+		A7D7A6DC23847C360097CF92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */; };
+		B88D87AF0542F437B83FA1A2 /* Pods_FoodTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2547A42E00E99B77830A27 /* Pods_FoodTinder.framework */; };
+		F9DE11A0B71DA3B445D5703A /* Pods_FoodTinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C55A3D7DD43FD554E047D0 /* Pods_FoodTinderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FC733E8C0F4E77953B7AE22 /* Pods-FoodTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinder.release.xcconfig"; path = "Target Support Files/Pods-FoodTinder/Pods-FoodTinder.release.xcconfig"; sourceTree = "<group>"; };
+		3D0279CF42755D3C201525EA /* Pods-FoodTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinder.debug.xcconfig"; path = "Target Support Files/Pods-FoodTinder/Pods-FoodTinder.debug.xcconfig"; sourceTree = "<group>"; };
 		68961DB523845F9E0015AF0A /* FoodTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68961DB823845F9E0015AF0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68961DBA23845F9E0015AF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,11 @@
 		68961DD023845FA10015AF0A /* FoodTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68961DD423845FA10015AF0A /* FoodTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTinderTests.swift; sourceTree = "<group>"; };
 		68961DD623845FA10015AF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6901F4E1907F607B821A99B4 /* Pods-FoodTinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinderTests.release.xcconfig"; path = "Target Support Files/Pods-FoodTinderTests/Pods-FoodTinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		A58F89685D4C1DB8D1F201E0 /* Pods-FoodTinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinderTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodTinderTests/Pods-FoodTinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5C55A3D7DD43FD554E047D0 /* Pods_FoodTinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE2547A42E00E99B77830A27 /* Pods_FoodTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88D87AF0542F437B83FA1A2 /* Pods_FoodTinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +68,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DE11A0B71DA3B445D5703A /* Pods_FoodTinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46443B100A93D4A2214DE1B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2547A42E00E99B77830A27 /* Pods_FoodTinder.framework */,
+				A5C55A3D7DD43FD554E047D0 /* Pods_FoodTinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68961DAC23845F9E0015AF0A = {
 			isa = PBXGroup;
 			children = (
 				68961DB723845F9E0015AF0A /* FoodTinder */,
 				68961DD323845FA10015AF0A /* FoodTinderTests */,
 				68961DB623845F9E0015AF0A /* Products */,
+				B1D66085A62B668E31A49D5D /* Pods */,
+				46443B100A93D4A2214DE1B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +107,7 @@
 		68961DB723845F9E0015AF0A /* FoodTinder */ = {
 			isa = PBXGroup;
 			children = (
+				A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */,
 				68961DB823845F9E0015AF0A /* AppDelegate.swift */,
 				68961DBA23845F9E0015AF0A /* SceneDelegate.swift */,
 				68961DBC23845F9E0015AF0A /* FirstViewController.swift */,
@@ -105,6 +130,17 @@
 			path = FoodTinderTests;
 			sourceTree = "<group>";
 		};
+		B1D66085A62B668E31A49D5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D0279CF42755D3C201525EA /* Pods-FoodTinder.debug.xcconfig */,
+				1FC733E8C0F4E77953B7AE22 /* Pods-FoodTinder.release.xcconfig */,
+				A58F89685D4C1DB8D1F201E0 /* Pods-FoodTinderTests.debug.xcconfig */,
+				6901F4E1907F607B821A99B4 /* Pods-FoodTinderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68961DD923845FA10015AF0A /* Build configuration list for PBXNativeTarget "FoodTinder" */;
 			buildPhases = (
+				CC5F4C47F03910B448C5C2C6 /* [CP] Check Pods Manifest.lock */,
 				68961DB123845F9E0015AF0A /* Sources */,
 				68961DB223845F9E0015AF0A /* Frameworks */,
 				68961DB323845F9E0015AF0A /* Resources */,
+				A3F109E60571A54939508B0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68961DDC23845FA10015AF0A /* Build configuration list for PBXNativeTarget "FoodTinderTests" */;
 			buildPhases = (
+				CDBE9DA45A62D95C889CB897 /* [CP] Check Pods Manifest.lock */,
 				68961DCC23845FA10015AF0A /* Sources */,
 				68961DCD23845FA10015AF0A /* Frameworks */,
 				68961DCE23845FA10015AF0A /* Resources */,
@@ -187,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68961DCA23845FA10015AF0A /* LaunchScreen.storyboard in Resources */,
+				A7D7A6DB23847C360097CF92 /* GoogleService-Info.plist in Resources */,
 				68961DC723845FA10015AF0A /* Assets.xcassets in Resources */,
 				68961DC223845F9E0015AF0A /* Main.storyboard in Resources */,
 			);
@@ -196,10 +236,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D7A6DC23847C360097CF92 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3F109E60571A54939508B0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTinder/Pods-FoodTinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTinder/Pods-FoodTinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodTinder/Pods-FoodTinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5F4C47F03910B448C5C2C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDBE9DA45A62D95C889CB897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68961DB123845F9E0015AF0A /* Sources */ = {
@@ -368,6 +473,7 @@
 		};
 		68961DDA23845FA10015AF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0279CF42755D3C201525EA /* Pods-FoodTinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +492,7 @@
 		};
 		68961DDB23845FA10015AF0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC733E8C0F4E77953B7AE22 /* Pods-FoodTinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,6 +511,7 @@
 		};
 		68961DDD23845FA10015AF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58F89685D4C1DB8D1F201E0 /* Pods-FoodTinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +534,7 @@
 		};
 		68961DDE23845FA10015AF0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6901F4E1907F607B821A99B4 /* Pods-FoodTinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
