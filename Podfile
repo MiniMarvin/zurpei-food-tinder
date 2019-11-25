@@ -6,7 +6,8 @@ target 'FoodTinder' do
   use_frameworks!
 
   # Pods for FoodTinder
-  pod 'Firebase'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
   target 'FoodTinderTests' do
     inherit! :search_paths
     # Pods for testing

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstViewController: UIViewController {
-
+    let ref = Database.database().reference(withPath: "menu")
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

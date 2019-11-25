@@ -18,6 +18,8 @@
 		68961DD523845FA10015AF0A /* FoodTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961DD423845FA10015AF0A /* FoodTinderTests.swift */; };
 		A7D7A6DB23847C360097CF92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */; };
 		A7D7A6DC23847C360097CF92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */; };
+		A7D7A6DE2385CFBB0097CF92 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7A6DD2385CFBB0097CF92 /* Recipe.swift */; };
+		A7D7A6E1238729A80097CF92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7A6E0238729A80097CF92 /* User.swift */; };
 		B88D87AF0542F437B83FA1A2 /* Pods_FoodTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2547A42E00E99B77830A27 /* Pods_FoodTinder.framework */; };
 		F9DE11A0B71DA3B445D5703A /* Pods_FoodTinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C55A3D7DD43FD554E047D0 /* Pods_FoodTinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,8 @@
 		A58F89685D4C1DB8D1F201E0 /* Pods-FoodTinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinderTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodTinderTests/Pods-FoodTinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5C55A3D7DD43FD554E047D0 /* Pods_FoodTinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7D7A6DD2385CFBB0097CF92 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A7D7A6E0238729A80097CF92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE2547A42E00E99B77830A27 /* Pods_FoodTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,7 @@
 		68961DB723845F9E0015AF0A /* FoodTinder */ = {
 			isa = PBXGroup;
 			children = (
+				A7D7A6DF2385CFC30097CF92 /* Model */,
 				A7D7A6DA23847C360097CF92 /* GoogleService-Info.plist */,
 				68961DB823845F9E0015AF0A /* AppDelegate.swift */,
 				68961DBA23845F9E0015AF0A /* SceneDelegate.swift */,
@@ -128,6 +133,15 @@
 				68961DD623845FA10015AF0A /* Info.plist */,
 			);
 			path = FoodTinderTests;
+			sourceTree = "<group>";
+		};
+		A7D7A6DF2385CFC30097CF92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A6DD2385CFBB0097CF92 /* Recipe.swift */,
+				A7D7A6E0238729A80097CF92 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B1D66085A62B668E31A49D5D /* Pods */ = {
@@ -312,10 +326,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				68961DBF23845F9E0015AF0A /* SecondViewController.swift in Sources */,
+				A7D7A6DE2385CFBB0097CF92 /* Recipe.swift in Sources */,
 				68961DBD23845F9E0015AF0A /* FirstViewController.swift in Sources */,
 				68961DB923845F9E0015AF0A /* AppDelegate.swift in Sources */,
 				68961DBB23845F9E0015AF0A /* SceneDelegate.swift in Sources */,
 				68961DC523845F9E0015AF0A /* FoodTinder.xcdatamodeld in Sources */,
+				A7D7A6E1238729A80097CF92 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
