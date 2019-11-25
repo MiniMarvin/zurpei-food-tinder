@@ -28,13 +28,16 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
         bottomControls.likeButton.addTarget(self, action: #selector(handleLikeButton), for: .touchUpInside)
         bottomControls.dislikeButton.addTarget(self, action: #selector(handleDislikeButton), for: .touchUpInside)
         setupLayout()
-        setupFakeCard()
 //        fetchCurrentUser()
+        fetchUsersFromFirebase()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        print("\n\n\n\n")
+//        self.topCardView = self.setupFakeCard()
+        print(self.topCardView)
+        print("\n\n\n\n")
 //        if Auth.auth().currentUser == nil {
 //            let registrationController = RegistrationController()
 //            registrationController.loginControllerDelegate = self
@@ -50,17 +53,14 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     fileprivate var user: User?
     
     fileprivate func fetchCurrentUser() {
-        
         cardsDeckView.subviews.forEach({$0.removeFromSuperview()})
+        
         Firestore.firestore().fetchCurrentUser { (user, error) in
-            
             if let error = error {
                 print("Error, \(error)")
                 return
             }
-            
             self.user = user
-            
             self.fetchSwipes()
         }
     }
@@ -68,7 +68,6 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     var swipes = [String: Int]()
     
     fileprivate func fetchSwipes() {
-        
         guard let uid = Auth.auth().currentUser?.uid else { return }
         Firestore.firestore().collection("swipes").document(uid).getDocument { (snapshot, error) in
             if let error = error {
@@ -78,7 +77,7 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
             
             guard let data = snapshot?.data() as? [String: Int] else { return }
             self.swipes = data
-            self.fetchUsersFromFirebase()
+//            self.fetchUsersFromFirebase()
         }
     }
     
@@ -90,65 +89,83 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     var lastFetchedUser: User?
     
     fileprivate func fetchUsersFromFirebase() {
-        let minAge = user?.minSeekingAge ?? SettingsController.defaultMinSeekingAge
-        let maxAge = user?.maxSeekingAge ?? SettingsController.defaultMaxSeekingAge
+        let user = User(dictionary: ["age": 12, "profession": "kkk", "fullName": "bora dale", "imageUrl1": "https://www.pexels.com/photo/potatoes-144248/", "uid": "1234567890", "minSeekingAge": 0, "maxSeekingAge": 100])
+//        self.age = dictionary["age"] as? Int
+//        self.profession = dictionary["profession"] as? String
+//        self.name = dictionary["fullName"] as? String ?? ""
+//        self.imageUrl1 = dictionary["imageUrl1"] as? String
+//        self.imageUrl2 = dictionary["imageUrl2"] as? String
+//        self.imageUrl3 = dictionary["imageUrl3"] as? String
+//        self.uid = dictionary["uid"] as? String ?? ""
+//        self.minSeekingAge = dictionary["minSeekingAge"] as? Int
+//        self.maxSeekingAge = dictionary["maxSeekingAge"] as? Int
+        var prevoiusCardView: CardView?
         
-        let hud = JGProgressHUD(style: .dark)
-        hud.textLabel.text = "Fetching Users"
-        hud.show(in: view)
-        
-        let query = Firestore.firestore().collection("users").whereField("age", isGreaterThan: minAge - 1).whereField("age", isLessThan: maxAge + 1)
-//        let query = Firestore.firestore().collection("users")
-        
-        topCardView = nil
-        
-        query.getDocuments { (snapshot, error) in
-            
-            hud.dismiss()
-            
-            if let error = error {
-                print("Error: \(error)")
-                return
-            }
-            
-            var prevoiusCardView: CardView?
-            
-            snapshot?.documents.forEach({ (documentSnapshot) in
-                let userDictionary = documentSnapshot.data()
-                let user = User(dictionary: userDictionary)
-                
-                let isNotCurrentUser = user.uid != Auth.auth().currentUser?.uid
-//                let hasSwipedBefore = self.swipes[user.uid!] == nil
-                let hasSwipedBefore = true
-                if isNotCurrentUser && hasSwipedBefore {
-                    
-                    let cardView = self.setupCardFromUser(user: user)
-                    
-                    prevoiusCardView?.nextCardView = cardView
-                    prevoiusCardView = cardView
-                    
-                    if self.topCardView == nil {
-                        self.topCardView = cardView
-                    }
-                }
-            })
+        let cardView = self.setupCardFromUser(user: user)
+        prevoiusCardView?.nextCardView = cardView
+        prevoiusCardView = cardView
+
+        if self.topCardView == nil {
+            self.topCardView = cardView
         }
     }
+    
+//    fileprivate func fetchUsersFromFirebase() {
+//        let minAge = user?.minSeekingAge ?? SettingsController.defaultMinSeekingAge
+//        let maxAge = user?.maxSeekingAge ?? SettingsController.defaultMaxSeekingAge
+//
+//        let hud = JGProgressHUD(style: .dark)
+//        hud.textLabel.text = "Fetching Users"
+//        hud.show(in: view)
+//
+//        let query = Firestore.firestore().collection("users").whereField("age", isGreaterThan: minAge - 1).whereField("age", isLessThan: maxAge + 1)
+////        let query = Firestore.firestore().collection("users")
+//
+//        topCardView = nil
+//
+//        query.getDocuments { (snapshot, error) in
+//
+//            hud.dismiss()
+//
+//            if let error = error {
+//                print("Error: \(error)")
+//                return
+//            }
+//
+//            var prevoiusCardView: CardView?
+//
+//            snapshot?.documents.forEach({ (documentSnapshot) in
+//                let userDictionary = documentSnapshot.data()
+//                let user = User(dictionary: userDictionary)
+//
+//                let isNotCurrentUser = user.uid != Auth.auth().currentUser?.uid
+////               let hasSwipedBefore = self.swipes[user.uid!] == nil
+//                let hasSwipedBefore = true
+//                if isNotCurrentUser && hasSwipedBefore {
+//
+//                    let cardView = self.setupCardFromUser(user: user)
+//
+//                    prevoiusCardView?.nextCardView = cardView
+//                    prevoiusCardView = cardView
+//
+//                    if self.topCardView == nil {
+//                        self.topCardView = cardView
+//                    }
+//                }
+//            })
+//        }
+//    }
     
     var topCardView: CardView?
     
     @objc func handleLikeButton() {
-        
         saveSwipeToFirestore(didLike: 1)
         performSwipeAnimation(translation: 700, angle: 15)
-
     }
     
     @objc func handleDislikeButton() {
-        
         saveSwipeToFirestore(didLike: 0)
         performSwipeAnimation(translation: -700, angle: -10)
-        
     }
     
     fileprivate func saveSwipeToFirestore(didLike: Int) {
@@ -224,7 +241,6 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     }
     
     fileprivate func performSwipeAnimation(translation: CGFloat, angle: CGFloat) {
-        
         let duration = 0.5
         let translationAnimation = CABasicAnimation(keyPath: "position.x")
         translationAnimation.toValue = translation
@@ -264,6 +280,7 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     fileprivate func setupFakeCard() -> CardView {
         let cardView = CardView(frame: .zero)
         cardView.cardViewModel = CardViewModel(uid: "1234567890", imageNames: ["super_like_circle", "super_like_circle", "super_like_circle"], attributedString: NSAttributedString(string: "Poketeste"), textAlignment: .left)
+//        self.view = cardView
         cardsDeckView.addSubview(cardView)
         cardsDeckView.sendSubviewToBack(cardView)
         
@@ -291,7 +308,6 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     
     //MARK: - Setup File Private Methods
     fileprivate func setupLayout() {
-        
         view.backgroundColor = .white
         
         let overallStackView = UIStackView(arrangedSubviews: [topStackView, cardsDeckView, bottomControls])
@@ -307,9 +323,7 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     }
     
     fileprivate func setupFirestoreUserCards() {
-    
         cardViewModels.forEach { (cardViewModel) in
-            
             let cardView = CardView(frame: .zero)
             cardView.cardViewModel = cardViewModel
             cardsDeckView.addSubview(cardView)

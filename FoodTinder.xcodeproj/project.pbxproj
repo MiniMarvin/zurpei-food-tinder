@@ -197,6 +197,7 @@
 				68961DE623846B790015AF0A /* Components */,
 				684BE3962384750F00BF1702 /* Controllers */,
 				684BE38B2384743400BF1702 /* CardViewModel.swift */,
+				684BE39B238475AD00BF1702 /* User.swift */,
 				68961DE723846C530015AF0A /* CardView.swift */,
 			);
 			path = Home;
@@ -236,7 +237,6 @@
 		68961DE523846ACD0015AF0A /* Infos */ = {
 			isa = PBXGroup;
 			children = (
-				684BE39B238475AD00BF1702 /* User.swift */,
 				684BE39E2384763700BF1702 /* UserDetailsController.swift */,
 			);
 			path = Infos;
