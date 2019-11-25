@@ -24,6 +24,7 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
         super.viewDidLoad()
         
         topStackView.settingsButton.addTarget(self, action: #selector(handleSettingsButton), for: .touchUpInside)
+        topStackView.messageButton.addTarget(self, action: #selector(handleFavButton), for: .touchUpInside)
         bottomControls.refreshButton.addTarget(self, action: #selector(handleRefreshButton), for: .touchUpInside)
         bottomControls.likeButton.addTarget(self, action: #selector(handleLikeButton), for: .touchUpInside)
         bottomControls.dislikeButton.addTarget(self, action: #selector(handleDislikeButton), for: .touchUpInside)
@@ -89,7 +90,7 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
     var lastFetchedUser: User?
     
     fileprivate func fetchUsersFromFirebase() {
-        let user = User(dictionary: ["age": 12, "profession": "kkk", "fullName": "bora dale", "imageUrl1": "https://www.pexels.com/photo/potatoes-144248/", "uid": "1234567890", "minSeekingAge": 0, "maxSeekingAge": 100])
+        let user = User(dictionary: ["age": 12, "profession": "kkk", "fullName": "bora dale", "imageUrl1": "https://www.gazetadopovo.com.br/haus/wp-content/uploads/2019/10/02190226/flores-primavera-pixabay-1.jpg", "imageUrl2": "https://imagens-revista.vivadecora.com.br/uploads/2018/05/tipos-de-flores-para-arranjos-na-decora%C3%A7%C3%A3o.jpg", "uid": "1234567890", "minSeekingAge": 0, "maxSeekingAge": 100])
 //        self.age = dictionary["age"] as? Int
 //        self.profession = dictionary["profession"] as? String
 //        self.name = dictionary["fullName"] as? String ?? ""
@@ -299,6 +300,14 @@ class HomeController: UIViewController, SettingsControllerDelegate, CardViewDele
         settingsController.settingDelegate = self
         let navigationController = UINavigationController(rootViewController: settingsController)
         present(navigationController, animated: true, completion: nil)
+        
+    }
+    
+    @objc fileprivate func handleFavButton() {
+        
+        let favView = FavView() 
+//        let navigationController = UINavigationController(rootViewController: settingsController)
+        present(favView, animated: true, completion: nil)
         
     }
     

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6828B7D3238C49F30008B984 /* FavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828B7D2238C49F30008B984 /* FavView.swift */; };
+		6828B7D5238C49FE0008B984 /* FavViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828B7D4238C49FE0008B984 /* FavViewModel.swift */; };
+		6828B7D7238C4A0A0008B984 /* FavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828B7D6238C4A0A0008B984 /* FavModel.swift */; };
+		6828B7DA238C4B620008B984 /* FavCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828B7D8238C4B620008B984 /* FavCellTableViewCell.swift */; };
+		6828B7DB238C4B620008B984 /* FavCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6828B7D9238C4B620008B984 /* FavCellTableViewCell.xib */; };
 		684BE38C2384743400BF1702 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE38B2384743400BF1702 /* CardViewModel.swift */; };
 		684BE38E2384748D00BF1702 /* SwipePhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE38D2384748D00BF1702 /* SwipePhotosController.swift */; };
 		684BE392238474BC00BF1702 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE390238474BC00BF1702 /* Extensions+UIView.swift */; };
@@ -52,6 +57,11 @@
 		2E6149AB0E6145241F1A5FC2 /* Pods_FoodTinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CB958A187B04EFED8214FC /* Pods-FoodTinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinderTests.release.xcconfig"; path = "Target Support Files/Pods-FoodTinderTests/Pods-FoodTinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		5AE48235A7FDE514507BBCAA /* Pods-FoodTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTinder.release.xcconfig"; path = "Target Support Files/Pods-FoodTinder/Pods-FoodTinder.release.xcconfig"; sourceTree = "<group>"; };
+		6828B7D2238C49F30008B984 /* FavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavView.swift; sourceTree = "<group>"; };
+		6828B7D4238C49FE0008B984 /* FavViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewModel.swift; sourceTree = "<group>"; };
+		6828B7D6238C4A0A0008B984 /* FavModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavModel.swift; sourceTree = "<group>"; };
+		6828B7D8238C4B620008B984 /* FavCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCellTableViewCell.swift; sourceTree = "<group>"; };
+		6828B7D9238C4B620008B984 /* FavCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavCellTableViewCell.xib; sourceTree = "<group>"; };
 		684BE38B2384743400BF1702 /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardViewModel.swift; path = "../../../Tinder-Clone/Tinder/ViewModels/CardViewModel.swift"; sourceTree = "<group>"; };
 		684BE38D2384748D00BF1702 /* SwipePhotosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipePhotosController.swift; sourceTree = "<group>"; };
 		684BE390238474BC00BF1702 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
@@ -216,6 +226,11 @@
 		68961DE223846AB70015AF0A /* Favs */ = {
 			isa = PBXGroup;
 			children = (
+				6828B7D2238C49F30008B984 /* FavView.swift */,
+				6828B7D4238C49FE0008B984 /* FavViewModel.swift */,
+				6828B7D6238C4A0A0008B984 /* FavModel.swift */,
+				6828B7D8238C4B620008B984 /* FavCellTableViewCell.swift */,
+				6828B7D9238C4B620008B984 /* FavCellTableViewCell.xib */,
 			);
 			path = Favs;
 			sourceTree = "<group>";
@@ -361,6 +376,7 @@
 				68961DC723845FA10015AF0A /* Assets.xcassets in Resources */,
 				68961DC223845F9E0015AF0A /* Main.storyboard in Resources */,
 				684BE3AD238482ED00BF1702 /* HomeViewController.xib in Resources */,
+				6828B7DB238C4B620008B984 /* FavCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68961DBF23845F9E0015AF0A /* SecondViewController.swift in Sources */,
+				6828B7D5238C49FE0008B984 /* FavViewModel.swift in Sources */,
 				68961DEA23846C600015AF0A /* AgeRangeCell.swift in Sources */,
 				684BE392238474BC00BF1702 /* Extensions+UIView.swift in Sources */,
 				68961DBD23845F9E0015AF0A /* FirstViewController.swift in Sources */,
@@ -454,13 +471,16 @@
 				684BE39A2384757300BF1702 /* SettingsController.swift in Sources */,
 				68961DBB23845F9E0015AF0A /* SceneDelegate.swift in Sources */,
 				68961DE823846C530015AF0A /* CardView.swift in Sources */,
+				6828B7DA238C4B620008B984 /* FavCellTableViewCell.swift in Sources */,
 				684BE3952384750A00BF1702 /* PhotoController.swift in Sources */,
 				684BE39F2384763700BF1702 /* UserDetailsController.swift in Sources */,
 				684BE38E2384748D00BF1702 /* SwipePhotosController.swift in Sources */,
 				684BE3AC238482ED00BF1702 /* HomeViewController.swift in Sources */,
 				68961DEE23846C840015AF0A /* HomeBottomControlsStackView.swift in Sources */,
 				684BE3A12384774500BF1702 /* SettingsCell.swift in Sources */,
+				6828B7D7238C4A0A0008B984 /* FavModel.swift in Sources */,
 				68961DC523845F9E0015AF0A /* FoodTinder.xcdatamodeld in Sources */,
+				6828B7D3238C49F30008B984 /* FavView.swift in Sources */,
 				684BE3982384753D00BF1702 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
